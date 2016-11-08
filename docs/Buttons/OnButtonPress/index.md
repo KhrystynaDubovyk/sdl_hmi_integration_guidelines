@@ -19,8 +19,9 @@ The hmi must send the name of the button pressed, the press mode detected, and I
 
 !!! note
 
-The value of customButtonID is provided by SDL within the [softButton](../../common/structs/#softbutton) struct for some rpcs such as [UI.Alert](../../ui/alert)
-
+1. The value of customButtonID is provided by SDL within the [softButton](../../common/structs/#softbutton) struct for some rpcs such as [UI.Alert](../../ui/alert)
+2. OnButtonPress/OnButtonEvent -> If no “appID” -> SDL transfers notification to FULL apps only 
+3. OnButtonPress/OnButtonEvent -> If “appID” is present -> SDL transfers notification to the named app, only if it’s in FULL or LIMITED (and ignores notification for BACKROUND & NONE even if there is “appID”)
 !!!
 
 ### Notification
