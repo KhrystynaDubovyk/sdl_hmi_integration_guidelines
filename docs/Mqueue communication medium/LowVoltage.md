@@ -17,7 +17,7 @@ A 'LowVoltage' event occurs on HMI when battery voltage hits below a certain pre
 
 1. Send a "LOW_VOLTAGE" message via mqueue to SDL when 'LowVoltage' event occurs
 2. Send a "WAKE_UP" message via mqueue to SDL when the voltage recovers
-3. Send a "IGNITION_OFF" message via mqueue to SDL when 
+3. Send a "IGNITION_OFF" message when SDL processes have to be terminated, applications have to be unregistered due to shut the ignition off    
 
 !!!
 
