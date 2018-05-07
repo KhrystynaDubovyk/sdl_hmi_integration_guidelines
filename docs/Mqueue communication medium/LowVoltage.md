@@ -22,10 +22,10 @@ A 'LowVoltage' event occurs on HMI when battery voltage hits below a certain pre
 !!!
 
 !!! NOTE 
-* SDL ignores all the requests from mobile applications without providing any kind of response
+* SDL ignores all requests from mobile applications without providing any kind of response
 * SDL ignores all requests, responses and messages from HMI except messages for "WAKE_UP" or "IGNITION_OFF"  
 * All transports are unavailable for SDL
-* SDL persists resumption related data stored before receivingv a "LOW_VOLTAGE" message  
+* SDL persists resumption related data stored before receiving a "LOW_VOLTAGE" message  
 * SDL resumes its regular work after receiving a "WAKE_UP" message  
 * SDL must start up correctly in the next ignition cycle after it was powered off in low voltage state
 
